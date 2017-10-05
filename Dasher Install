@@ -1,0 +1,69 @@
+sudo apt-get update
+
+sudo apt-get install git
+
+wget https://nodejs.org/dist/v6.11.4/node-v6.11.4-linux-x64.tar.xz
+
+tar -xvf node-v6.11.4-linux-x64.tar.xz
+
+cd node-v6.11.4-linux-x64
+
+sudo cp -R * /usr/local/
+
+node -v
+
+sudo apt-get install libpcap-dev
+
+git clone https://github.com/maddox/dasher.git
+
+cd dasher
+
+sudo apt-get install build-essential
+
+sudo npm install
+
+		Add this to config.json file:
+
+{
+    "buttons": [
+        {
+            "name": "Command Exec Button",
+            "address": "fc:a6:67:3d:a3:dd",
+            "interface": "eno1",
+            "timeout": "5000",
+            "protocol": "udp",
+            "cmd": "firefox"
+        }
+    ]
+}
+
+
+sudo npm run start
+
+
+
+
+
+
+
+
+
+
+AMAZON DASH BUTTON - SMART THINGS install
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
